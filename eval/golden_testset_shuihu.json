@@ -1,0 +1,232 @@
+{
+  "novelId": "0d22f95c-8db0-4116-9f1a-d02763175ece",
+  "novelTitle": "水浒传",
+  "_format": "expectedChunks 支持三种格式: 章节编号(ch1)、chunk索引(ch2:3,向后兼容)、文本片段(稳定✅)",
+  "_note": "2026-08-19 评测校准: 原用人物名(宋江/晁盖/公孙胜等)当片段，命中上百 chunk 导致相关集失真、recall 被系统性压低；已改为锚定具体答案段落的高特异片段(命中≤8)。",
+  "questions": [
+    {
+      "id": "SH01",
+      "type": "直白事实",
+      "question": "洪太尉在龙虎山伏魔殿中放走了什么？",
+      "expectedChunks": ["伏魔之殿", "遇洪而开", "天摧地塌"],
+      "referenceAnswer": "一百零八个魔君（天罡地煞星）。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH02",
+      "type": "直白事实",
+      "question": "鲁提辖三拳打死了谁？",
+      "expectedChunks": ["三拳真个打死了他", "镇关西郑大官人"],
+      "referenceAnswer": "镇关西（郑屠）。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH03",
+      "type": "直白事实",
+      "question": "鲁智深在五台山文殊院做了什么导致被赶下山？",
+      "expectedChunks": ["卷堂大散", "打坏了金刚"],
+      "referenceAnswer": "两次醉酒大闹五台山，打坏金刚、打伤众僧。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH04",
+      "type": "直白事实",
+      "question": "武松在什么地方赤手空拳打死了一只老虎？",
+      "expectedChunks": ["三碗不过冈", "吊睛白额大虫"],
+      "referenceAnswer": "景阳冈。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH05",
+      "type": "直白事实",
+      "question": "林冲是被谁陷害的？用的什么毒计？",
+      "expectedChunks": ["白虎节堂", "安敢辄入白虎节堂"],
+      "referenceAnswer": "高俅设计诱林冲带刀入白虎节堂。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH06",
+      "type": "直白事实",
+      "question": "晁盖等人在黄泥冈上劫了梁中书送给谁的礼物？",
+      "expectedChunks": ["十万贯金珠宝贝"],
+      "referenceAnswer": "劫了梁中书送给蔡京的生辰纲。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH07",
+      "type": "直白事实",
+      "question": "宋江在浔阳楼上题了什么反诗？",
+      "expectedChunks": ["敢笑黄巢不丈夫", "浔阳楼"],
+      "referenceAnswer": "「他时若遂凌云志，敢笑黄巢不丈夫」。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH08",
+      "type": "直白事实",
+      "question": "武松在飞云浦和鸳鸯楼做了什么？",
+      "expectedChunks": ["血溅鸳鸯楼", "飞云浦"],
+      "referenceAnswer": "飞云浦杀公人，鸳鸯楼杀张都监等十五人。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH09",
+      "type": "外号/别名",
+      "question": "八十万禁军枪棒教头林武师是谁？",
+      "expectedChunks": ["禁军枪棒教头林武师"],
+      "referenceAnswer": "林冲，绰号豹子头。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH10",
+      "type": "外号/别名",
+      "question": "渭州经略府提辖鲁达后来出家法号什么？绰号什么？",
+      "expectedChunks": ["经略府提辖，姓鲁，讳个达字", "赐名智深"],
+      "referenceAnswer": "法号智深，绰号花和尚。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH11",
+      "type": "外号/别名",
+      "question": "智多星吴用用什么计策帮晁盖夺了生辰纲？",
+      "expectedChunks": ["多少好汉被蒙汗药麻翻了"],
+      "referenceAnswer": "扮作卖枣商人，在黄泥冈上用蒙汗药麻翻杨志等人。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH12",
+      "type": "外号/别名",
+      "question": "入云龙公孙胜有什么特殊本领？",
+      "expectedChunks": ["善能呼风唤雨，驾雾腾云"],
+      "referenceAnswer": "能呼风唤雨、驾雾腾云，法术高强。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH13",
+      "type": "侧面描写",
+      "question": "谁的兵器是六十二斤浑铁禅杖？此人还在菜园里倒拔了一棵杨树。",
+      "expectedChunks": ["浑铁杖，头尾长五尺，重六十二斤", "将那株绿杨树带根拔起"],
+      "referenceAnswer": "鲁智深（花和尚）。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH14",
+      "type": "侧面描写",
+      "question": "谁在草料场山神庙里杀了陆谦、富安和差拨三人？",
+      "expectedChunks": ["林教头风雪山神庙", "把富安，陆谦，头都割下来"],
+      "referenceAnswer": "林冲。雪夜杀死三人后上了梁山。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH15",
+      "type": "侧面描写",
+      "question": "谁在沂岭上一气杀了四只老虎？他为什么杀虎？",
+      "expectedChunks": ["黑旋风沂岭杀四虎", "不是我娘的是谁的"],
+      "referenceAnswer": "李逵（黑旋风），因老母被虎所害。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH16",
+      "type": "侧面描写",
+      "question": "武松用什么方式替施恩夺回快活林？",
+      "expectedChunks": ["醉打蒋门神"],
+      "referenceAnswer": "装醉，用玉环步鸳鸯脚将蒋门神打倒。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH17",
+      "type": "跨章关联",
+      "question": "林冲从被陷害到上梁山经过了哪些关键事件？",
+      "expectedChunks": ["白虎节堂", "野猪林", "林教头风雪山神庙", "雪夜上梁山"],
+      "referenceAnswer": "误入白虎堂→刺配→野猪林遇救→风雪山神庙→雪夜上梁山。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH18",
+      "type": "跨章关联",
+      "question": "武松从景阳冈打虎到落草二龙山经历了哪些重要事件？",
+      "expectedChunks": ["三碗不过冈", "醉打蒋门神", "飞云浦", "血溅鸳鸯楼"],
+      "referenceAnswer": "景阳冈打虎→斗杀西门庆→醉打蒋门神→大闹飞云浦→血溅鸳鸯楼→上二龙山。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH19",
+      "type": "跨章关联",
+      "question": "梁山泊经历了几代寨主？各是怎么更替的？",
+      "expectedChunks": ["火并", "射死我的", "梁山泊主"],
+      "referenceAnswer": "三代：王伦（被林冲火并）→晁盖（曾头市中箭）→宋江。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH20",
+      "type": "跨章关联",
+      "question": "卢俊义为什么会上梁山？他替晁盖报了仇吗？",
+      "expectedChunks": ["河北玉麒麟", "卢俊义活捉史文恭"],
+      "referenceAnswer": "吴用设计逼卢俊义上梁山，后卢俊义活捉史文恭替晁盖报仇。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "SH21",
+      "type": "图关系",
+      "question": "鲁智深和林冲第一次在哪里相遇？他们是什么关系？",
+      "expectedChunks": ["就槐树下相见了", "结义智深为兄"],
+      "referenceAnswer": "菜园子墙外槐树下相遇，当场结义为兄弟。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH22",
+      "type": "图关系",
+      "question": "李逵对宋江忠心耿耿，为什么最后却被宋江毒死？",
+      "expectedChunks": ["一世清名忠义之事", "润州都统制"],
+      "referenceAnswer": "宋江怕李逵在自己死后造反坏了忠义名声，骗李逵喝下毒酒。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH23",
+      "type": "图关系",
+      "question": "晁盖临终前说了什么遗言？谁完成了他的遗愿？",
+      "expectedChunks": ["射死我的", "梁山泊主", "卢俊义活捉史文恭"],
+      "referenceAnswer": "遗言：捉得射死我的便为梁山泊主。卢俊义活捉了史文恭。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH24",
+      "type": "图关系",
+      "question": "天罡星中天魁星、天罡星、天机星、天闲星分别是谁？",
+      "expectedChunks": ["天魁星", "天罡星", "天机星", "天闲星"],
+      "referenceAnswer": "天魁星宋江、天罡星卢俊义、天机星吴用、天闲星公孙胜。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH25",
+      "type": "图关系",
+      "question": "梁山好汉中有哪些夫妻档？",
+      "expectedChunks": ["母大虫顾大嫂", "孙新这等本事也输与他", "菜园子张青", "母夜叉孙二娘"],
+      "referenceAnswer": "孙新与顾大嫂、张青与孙二娘、王英与扈三娘。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH26",
+      "type": "图关系",
+      "question": "梁山好汉接受招安后征讨了哪些势力？",
+      "expectedChunks": ["进兵征辽", "准西王庆河北田虎江南方腊"],
+      "referenceAnswer": "征辽、征田虎、征王庆、征方腊。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH27",
+      "type": "图关系",
+      "question": "张顺在征方腊时是怎么死的？",
+      "expectedChunks": ["涌金门", "张顺归神"],
+      "referenceAnswer": "在涌金门被方腊军乱箭射死，宋江到涌金门吊孝。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "SH28",
+      "type": "侧面描写",
+      "question": "征方腊后得以善终的梁山好汉有哪些？",
+      "expectedChunks": ["鲁智深浙江坐化", "已作清闲道人", "祸到临头难走", "衣锦还乡"],
+      "referenceAnswer": "鲁智深坐化、武松六和寺出家、燕青退隐、李俊出海、公孙胜修道。",
+      "testGraphRAG": false
+    }
+  ]
+}

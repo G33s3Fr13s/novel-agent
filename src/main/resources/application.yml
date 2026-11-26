@@ -1,0 +1,56 @@
+server:
+  port: ${APP_PORT:8080}
+
+spring:
+  application:
+    name: novel-agent
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:15432/novel_agent}
+    username: ${SPRING_DATASOURCE_USERNAME:novel}
+    password: ${SPRING_DATASOURCE_PASSWORD:novel123}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 20
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_null
+
+app:
+  jwt:
+    secret: ${APP_JWT_SECRET:change-me-to-a-strong-secret-at-least-256-bits}
+    access-token-expiration: 900000
+    refresh-token-expiration: 604800000
+    refresh-token-cookie-name: refresh_token
+  llm:
+    api-key: ${LLM_API_KEY:}
+    base-url: ${LLM_BASE_URL:https://api.deepseek.com}
+    model: ${LLM_MODEL:deepseek-chat}
+    max-tokens: 4096
+    temperature: 0.7
+  retrieval:
+    graph-enabled: false   # 图路目前拖后腿，暂时关闭
+  embedding:
+    api-key: ${LLM_EMBED_API_KEY:}
+    base-url: ${LLM_EMBED_BASE_URL:https://dashscope.aliyuncs.com/compatible-mode/v1}
+    model: ${LLM_EMBED_MODEL:text-embedding-v4}
+    dimensions: 1024
+
+logging:
+  level:
+    com.novelagent: DEBUG
+    org.springframework.security: INFO

@@ -1,0 +1,366 @@
+{
+  "novelId": "2c60a6d3-0ef2-4312-8d9f-9fbae6147e27",
+  "novelTitle": "剑影浮生",
+  "questions": [
+    {
+      "id": "Q01",
+      "type": "直白事实",
+      "question": "柳寻用的武器是什么？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "一把断剑，是老铁匠三年前打的，故意做成断的。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q02",
+      "type": "直白事实",
+      "question": "沈霜雪的暗器叫什么？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "寒月针，一套七十二枚，细如发丝，见血封喉。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q03",
+      "type": "直白事实",
+      "question": "柳寻在铁匠铺前站了多久？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "半个时辰。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q04",
+      "type": "直白事实",
+      "question": "老铁匠说杀猪刀卖多少钱一把？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "三百文。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q05",
+      "type": "直白事实",
+      "question": "柳寻什么时候被人从悬崖上扔下去的？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "五年前。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q06",
+      "type": "直白事实",
+      "question": "慕容岳现在在十三太保中排第几把交椅？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "第四把交椅。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q07",
+      "type": "直白事实",
+      "question": "沈霜雪在潼关被谁打伤？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "十三太保之一的铁掌陈，中了三掌。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q08",
+      "type": "直白事实",
+      "question": "太保府的东墙下面是什么？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "一条河，水深三丈，墙上有三个排水口。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q09",
+      "type": "直白事实",
+      "question": "老铁匠的弟弟在水下呆了几年？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "十二年。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q10",
+      "type": "直白事实",
+      "question": "玉簪的簪头雕着什么图案？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "一轮弯月。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q11",
+      "type": "直白事实",
+      "question": "慕容岳为什么要把柳寻推下悬崖？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "为了霸占柳寻家传的剑谱。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q12",
+      "type": "直白事实",
+      "question": "沈霜雪的父亲是怎么死的？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "被慕容岳的人杀的。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q13",
+      "type": "外号/别名",
+      "question": "残剑客是谁？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "柳寻，江湖人给他的外号，因为他用一把断剑。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q14",
+      "type": "外号/别名",
+      "question": "寒月仙子是谁？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "沈霜雪，因为她的暗器是一套七十二枚寒月针。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q15",
+      "type": "外号/别名",
+      "question": "鬼市是什么地方？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "京城一条巷子，白天卖菜卖肉，晚上做江湖的生意。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q16",
+      "type": "外号/别名",
+      "question": "龙须沟在哪里？它和太保府有什么关系？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "京城的一条臭水河，下游汇入一条大河绕过太保府东墙，水渠通往主厅。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q17",
+      "type": "外号/别名",
+      "question": "回风落雁是什么？第九式有什么弱点？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "柳寻家传剑谱中的致命招式，使完之后有半息僵直。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q18",
+      "type": "外号/别名",
+      "question": "铁掌陈是什么人？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "十三太保之一，半个月前在潼关追杀沈霜雪，打了三掌。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q19",
+      "type": "侧面描写",
+      "question": "穿红衣服的女人是谁？",
+      "expectedChunks": ["ch1", "ch2", "ch3"],
+      "referenceAnswer": "沈霜雪，她在多个章节中都被描述为穿红衣服。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q20",
+      "type": "侧面描写",
+      "question": "那个从不说话的人是谁？他为什么不能说话？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "是龙须沟的哑巴杀手，老铁匠的弟弟。舌头十二年前被慕容家的人割了。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q21",
+      "type": "侧面描写",
+      "question": "村口打铁的人以前是做什么的？",
+      "expectedChunks": ["ch1", "ch2"],
+      "referenceAnswer": "老铁匠，当年在慕容家的地牢里呆过，被迫为慕容岳铸剑。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q22",
+      "type": "侧面描写",
+      "question": "水底下的人用什么东西呼吸？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "一根芦苇管。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q23",
+      "type": "侧面描写",
+      "question": "老铁匠留给柳寻的布包里装了什么？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "一枚玉簪，通体碧绿，簪头雕着弯月，是沈霜雪的东西，上面有干涸的血迹。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q24",
+      "type": "侧面描写",
+      "question": "慕容岳用柳寻的剑谱做了什么？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "训练了一支私人杀手队伍。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q25",
+      "type": "侧面描写",
+      "question": "沈霜雪来找柳寻时手上的紫色瘀痕是什么？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "被铁掌陈打伤的中毒痕迹。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q26",
+      "type": "跨章关联",
+      "question": "断剑为什么是故意断的？",
+      "expectedChunks": ["ch1", "ch3"],
+      "referenceAnswer": "断剑比长剑短，出剑回剑更快，专门对付第九式回风落雁后的半息僵直。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q27",
+      "type": "跨章关联",
+      "question": "老铁匠兄弟俩和慕容岳之间有什么仇？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "十二年前慕容岳抓了他们进地牢，让老铁匠铸剑，铸不够就切弟弟的手指，还割了弟弟的舌头。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q28",
+      "type": "跨章关联",
+      "question": "沈霜雪为什么要去鬼市见柳寻？",
+      "expectedChunks": ["ch1", "ch2"],
+      "referenceAnswer": "她需要柳寻识别剑谱中的破绽，因为慕容岳用的是柳寻的家传剑法。",
+      "testGraphRAG": false
+    },
+    {
+      "id": "Q29",
+      "type": "跨章关联",
+      "question": "宴会当晚的计划是什么？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "柳寻在宴会上正面逼慕容岳出第九式，僵直的半息之间，水下的哑巴从水渠射暗器穿出，一剑穿心。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q30",
+      "type": "跨章关联",
+      "question": "五年前柳寻和沈霜雪第一次见面时发生了什么？",
+      "expectedChunks": ["ch1", "ch3"],
+      "referenceAnswer": "柳寻被慕容岳推下悬崖，沈霜雪在去报仇的路上发现了他，用寒月针把他伤口一针一针缝起来，照顾了一个月。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q31",
+      "type": "图关系",
+      "question": "老铁匠的弟弟是谁？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "龙须沟废船上的哑巴杀手，舌头被慕容家的人割了。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q32",
+      "type": "图关系",
+      "question": "被慕容岳割了舌头的人，他哥哥是做什么的？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "村口打铁的铁匠，曾被迫为慕容岳铸剑。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q33",
+      "type": "图关系",
+      "question": "沈霜雪的暗器和她的外号有什么关联？",
+      "expectedChunks": ["ch1"],
+      "referenceAnswer": "暗器是七十二枚寒月针，因此得名寒月仙子。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q34",
+      "type": "图关系",
+      "question": "帮助柳寻复仇的两个人之间是什么关系？",
+      "expectedChunks": ["ch2", "ch3"],
+      "referenceAnswer": "沈霜雪和哑巴杀手。沈霜雪的父亲也被慕容岳所杀，哑巴杀手和哥哥被慕容岳关了十二年。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q35",
+      "type": "图关系",
+      "question": "太保府设宴那晚，谁会从水渠下面发起偷袭？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "龙须沟的哑巴杀手，他在水下呆了十二年等着这一刻。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q36",
+      "type": "图关系",
+      "question": "回风落雁第九式的秘密是谁在什么地方发现的？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "老铁匠，在慕容岳地牢的炉子里听到的。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q37",
+      "type": "图关系",
+      "question": "铁掌陈属于哪个组织？他在这个组织里对付过谁？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "十三太保之一，在潼关追杀沈霜雪。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q38",
+      "type": "图关系",
+      "question": "那本被慕容岳抢走的剑谱，里面的剑法后来被用来对付了谁？",
+      "expectedChunks": ["ch2"],
+      "referenceAnswer": "对付沈霜雪——慕容岳用剑谱训练杀手，派去杀她。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q39",
+      "type": "图关系",
+      "question": "沈霜雪父亲的死和柳寻被推下悬崖这两件事有什么关联？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "都是慕容岳干的。沈霜雪在去找慕容岳报仇的路上发现了坠崖的柳寻，救了他。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q40",
+      "type": "图关系",
+      "question": "那个在潼关被打伤的女人，她留给柳寻的信物是什么？",
+      "expectedChunks": ["ch1", "ch2"],
+      "referenceAnswer": "一枚碧绿玉簪，簪头雕着弯月。她托老铁匠转交的。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q41",
+      "type": "图关系",
+      "question": "柳寻那把断剑的真正用途是什么？这和慕容岳的剑法有什么关系？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "断剑比长剑短，出剑回剑更快，专门对付回风落雁第九式使完后的半息僵直。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q42",
+      "type": "图关系",
+      "question": "龙须沟的哑巴杀手打算怎么进入太保府？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "从龙须沟下游的大河潜入太保府东墙排水口，经水渠到主厅下方。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q43",
+      "type": "图关系",
+      "question": "柳寻和沈霜雪除了复仇之外还有什么共同的经历？",
+      "expectedChunks": ["ch1", "ch3"],
+      "referenceAnswer": "五年前柳寻坠崖后沈霜雪用针救了他，照顾了一个月，两人因此相识。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q44",
+      "type": "图关系",
+      "question": "老铁匠为什么要在菜市口打三百文一把的杀猪刀？",
+      "expectedChunks": ["ch3"],
+      "referenceAnswer": "他不想再为慕容岳铸剑，只想做个普通铁匠。",
+      "testGraphRAG": true
+    },
+    {
+      "id": "Q45",
+      "type": "图关系",
+      "question": "这三人——柳寻、沈霜雪、哑巴杀手——共同的仇人是谁？为什么？",
+      "expectedChunks": ["ch1", "ch2", "ch3"],
+      "referenceAnswer": "慕容岳。柳寻被他推下悬崖夺走剑谱，沈霜雪父亲被他所杀，哑巴杀手被他割了舌头关了十二年。",
+      "testGraphRAG": true
+    }
+  ]
+}
